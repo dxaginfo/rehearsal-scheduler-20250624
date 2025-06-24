@@ -1,0 +1,38 @@
+{
+  "name": "rehearsal-scheduler",
+  "version": "1.0.0",
+  "description": "A web application for bands to schedule rehearsals, track attendance, send reminders, and suggest optimal rehearsal times",
+  "scripts": {
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxaginfo/rehearsal-scheduler-20250624.git"
+  },
+  "keywords": [
+    "rehearsal",
+    "scheduler",
+    "band",
+    "music",
+    "attendance",
+    "reminders"
+  ],
+  "author": "DX AG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxaginfo/rehearsal-scheduler-20250624/issues"
+  },
+  "homepage": "https://github.com/dxaginfo/rehearsal-scheduler-20250624#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
